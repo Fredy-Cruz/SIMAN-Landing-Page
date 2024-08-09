@@ -70,13 +70,15 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198239/Tarea%20Semana%204/wtmfyw6r7aliy0lvdijb.png);
+    background-color:antiquewhite;
 }
 /*----------------------------------------HEADER----------------------------------------*/
 .header{
     width: 100%;
     height: 5rem;
-    background-color: white;
-    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723169123/Tarea%20Semana%204/bk5ta84slc4fyqhoygdl.png);
+    background-color: var(--c2);
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198239/Tarea%20Semana%204/wtmfyw6r7aliy0lvdijb.png);
     position: fixed;
 
     display: flex;
@@ -137,7 +139,6 @@ body{
     width: 80%;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, fr);
     grid-template-areas: 
         "a  a   a   a"
         "b  c   c   c"
@@ -145,6 +146,7 @@ body{
         "b  d   e   e"
         "f  f   g   g"
     ;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
     padding: 1rem;
     border-radius:1rem;
@@ -156,25 +158,23 @@ body{
     align-items: end;
     border: var(--c3) solid 0.5rem;
     border-radius: 0.5rem;
+    background-color: var(--c1);
+    background-position: center;
+    background-size:cover;
+    background-blend-mode: multiply;
 }
 
 .prom-text{
     padding: 0.5rem;
     color: var(--c2);
     font-family: var(--f1);
-    font-size: 3rem;
+    font-size: 3rem;   
 }
 
 .prom-item-a{
     grid-area: a;
-    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723193603/Tarea%20Semana%204/evnb8jshchcgr4jrlwcf.gif);
-    width: 100%;
-    height: 100%;
-    background-position: center;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198242/Tarea%20Semana%204/hokhwhja5pnjjqhfbucv.gif);
     align-items: center;
-}
-
-.prom-banner{
     font-family: var(--f1);
     font-size: 4rem;
     font-style: italic;
@@ -182,37 +182,50 @@ body{
     text-shadow: 0.5rem 0.5rem black;
 }
 
+
 .subtext{
     font-size: 1.5rem;
 }
 
 .prom-item-b{
     grid-area: b;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198239/Tarea%20Semana%204/eu3qizr6tga4windcpwo.jpg);
+    
 }
 
 .prom-item-c{
     grid-area: c;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198820/Tarea%20Semana%204/hkyohydoq1kjgaqpfpns.webp);
 }
 
 .prom-item-d{
     grid-area: d;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723200015/Tarea%20Semana%204/tff4oghalpcgzfwmxz4l.webp);
 }
 
 .prom-item-e{
     grid-area: e;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723200145/Tarea%20Semana%204/cqpwuaylagagpszbcuhv.jpg);
 }
 
 .prom-item-f{
     grid-area: f;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723200320/Tarea%20Semana%204/ytop58mci3uf7cyt3jdo.jpg);
 }
 
 .prom-item-g{
     grid-area: g;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723200572/Tarea%20Semana%204/nhqkvtsqowrc6ryatfcs.jpg);
 }
 
 /*----------------------------------------HOVERS----------------------------------------*/
 .nav-text:hover{
     font-size: 1.6rem;
     transition: font-size 0.5s;
+}
+
+.prom-item:hover{
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 1s;
 }
 
