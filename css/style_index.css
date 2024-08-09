@@ -71,7 +71,7 @@ body{
     grid-template-columns: 1fr;
     justify-items: center;
     background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198239/Tarea%20Semana%204/wtmfyw6r7aliy0lvdijb.png);
-    background-color:antiquewhite;
+    background-color:white;
 }
 /*----------------------------------------HEADER----------------------------------------*/
 .header{
@@ -79,6 +79,7 @@ body{
     height: 5rem;
     background-color: var(--c2);
     background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198239/Tarea%20Semana%204/wtmfyw6r7aliy0lvdijb.png);
+    border-bottom: var(--c1) solid 5px;
     position: fixed;
 
     display: flex;
