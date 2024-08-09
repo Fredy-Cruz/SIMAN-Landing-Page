@@ -66,7 +66,11 @@ body, html{
 }
 
 /*----------------------------------------BODY----------------------------------------*/
-
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
 /*----------------------------------------HEADER----------------------------------------*/
 .header{
     width: 100%;
@@ -131,7 +135,7 @@ body, html{
 /*--------------------------------------PROMOTIONS--------------------------------------*/
 .promotion{
     width: 80%;
-    height: 70vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, fr);
     grid-template-areas: 
@@ -139,15 +143,47 @@ body, html{
         "b  c   c   c"
         "b  d   e   e"
         "b  d   e   e"
+        "f  f   g   g"
     ;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius:1rem;
 }
 
 .prom-item{
-    border: 5px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: var(--c3) solid 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.prom-text{
+    padding: 0.5rem;
+    color: var(--c2);
+    font-family: var(--f1);
+    font-size: 3rem;
 }
 
 .prom-item-a{
     grid-area: a;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723193603/Tarea%20Semana%204/evnb8jshchcgr4jrlwcf.gif);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    align-items: center;
+}
+
+.prom-banner{
+    font-family: var(--f1);
+    font-size: 4rem;
+    font-style: italic;
+    color: var(--c2);
+    text-shadow: 0.5rem 0.5rem black;
+}
+
+.subtext{
+    font-size: 1.5rem;
 }
 
 .prom-item-b{
@@ -166,9 +202,17 @@ body, html{
     grid-area: e;
 }
 
+.prom-item-f{
+    grid-area: f;
+}
+
+.prom-item-g{
+    grid-area: g;
+}
+
 /*----------------------------------------HOVERS----------------------------------------*/
 .nav-text:hover{
     font-size: 1.6rem;
-    transition: font-size 1s;
+    transition: font-size 0.5s;
 }
 
