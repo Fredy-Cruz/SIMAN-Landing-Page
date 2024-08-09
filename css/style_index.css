@@ -128,7 +128,45 @@ body, html{
     border: 0;
 }
 
-/*----------------------------------------HOVER----------------------------------------*/
+/*--------------------------------------PROMOTIONS--------------------------------------*/
+.promotion{
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, fr);
+    grid-template-areas: 
+        "a  a   a   a"
+        "b  c   c   c"
+        "b  d   e   e"
+        "b  d   e   e"
+    ;
+}
+
+.prom-item{
+    border: 5px red solid;
+}
+
+.prom-item-a{
+    grid-area: a;
+}
+
+.prom-item-b{
+    grid-area: b;
+}
+
+.prom-item-c{
+    grid-area: c;
+}
+
+.prom-item-d{
+    grid-area: d;
+}
+
+.prom-item-e{
+    grid-area: e;
+}
+
+/*----------------------------------------HOVERS----------------------------------------*/
 .nav-text:hover{
     font-size: 1.6rem;
     transition: font-size 1s;
