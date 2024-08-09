@@ -1,0 +1,80 @@
+/*---------------------------------------IMPORTS---------------------------------------*/
+
+
+/*----------------------------------------RESET----------------------------------------*/
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+
+/*----------------------------------------BODY----------------------------------------*/
+body{
+    justify-items: center;
+    background-color: red;
+}
+
+/*----------------------------------------HEADER----------------------------------------*/
+.header{
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723169123/Tarea%20Semana%204/bk5ta84slc4fyqhoygdl.png);
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
