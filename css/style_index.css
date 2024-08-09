@@ -1,5 +1,5 @@
 /*---------------------------------------IMPORTS---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*----------------------------------------RESET----------------------------------------*/
 *, *::before, *::after{
@@ -54,12 +54,23 @@ body, html{
     scroll-behavior: smooth; 
 }
 
+/*----------------------------------------VARS----------------------------------------*/
+:root{
+    --c1: #ba1d29;
+    --c2: white;
+    --c3: #6d1017;
+
+    --f1: "Oswald", sans-serif;
+    --f2: "Poppins", sans-serif;
+    --f3: "Open Sans", sans-serif;
+}
+
 /*----------------------------------------BODY----------------------------------------*/
 
 /*----------------------------------------HEADER----------------------------------------*/
 .header{
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     background-color: white;
     background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723169123/Tarea%20Semana%204/bk5ta84slc4fyqhoygdl.png);
     position: fixed;
@@ -70,7 +81,7 @@ body, html{
 
 .separator{
     width: 100%;
-    height: 4rem;
+    height: 5rem;
 }
 
 .logo{
@@ -82,13 +93,14 @@ body, html{
 
 /*----------------------------------------NAVBAR----------------------------------------*/
 .nav{
-    border: black solid 2px;
     width: 100%;
-    height: 3rem;
-    padding: 1rem;
+    height: 4rem;
+    background-color: var(--c1);
 
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item{
@@ -96,4 +108,29 @@ body, html{
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;    
 }
+
+.nav-text{
+    color: var(--c2);
+    font-size: 1.4rem;
+    font-family: var(--f2);
+    text-decoration: none;
+}
+
+.nav-input{
+    width: 70%;
+    padding: 0.5rem;
+    font-family: var(--f3);
+    border-radius: 10px;
+    background-color: var(--c3);
+    color: var(--c2);
+    border: 0;
+}
+
+/*----------------------------------------HOVER----------------------------------------*/
+.nav-text:hover{
+    font-size: 1.6rem;
+    transition: font-size 1s;
+}
+
