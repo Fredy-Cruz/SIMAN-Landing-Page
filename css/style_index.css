@@ -220,6 +220,66 @@ body{
     background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723200572/Tarea%20Semana%204/nhqkvtsqowrc6ryatfcs.jpg);
 }
 
+/*-------------------------------------SUBSCRIPTION----------------------------------------*/
+.subscription{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.subs-cont{
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    justify-items: center;
+}
+
+.subs-text{
+    width: 100%;
+    color: var(--c2);
+    font-family: var(--f2);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.subs-email{
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    font-family: var(--f2);
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.subs-button{
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    font-family: var(--f2); 
+    font-size: 1.2rem;
+}
+
+.subs-logo{
+    width: 60%;
+    height: 60%;  
+}
+
+.subs-logo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
 /*----------------------------------------HOVERS----------------------------------------*/
 .nav-text:hover{
     font-size: 1.6rem;
