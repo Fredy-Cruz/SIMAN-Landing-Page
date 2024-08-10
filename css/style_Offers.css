@@ -135,7 +135,25 @@ body{
     color: var(--c2);
     border: 0;
 }
-/*--------------------------------------PROMOTIONS-2--------------------------------------*/
+/*--------------------------------------BANNER--------------------------------------*/
+.banner{
+    position: fixed;
+    bottom: 0;
+}
+.banner-cont{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*--------------------------------------OFFER-1--------------------------------------*/
 .offer-1{
     width: 80%;
     height: 100vh;
