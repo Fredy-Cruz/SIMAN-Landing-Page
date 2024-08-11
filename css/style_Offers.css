@@ -135,23 +135,6 @@ body{
     color: var(--c2);
     border: 0;
 }
-/*--------------------------------------BANNER--------------------------------------*/
-.banner{
-    position: fixed;
-    bottom: 0;
-}
-.banner-cont{
-    width: 100%;
-    height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /*--------------------------------------OFFER-1--------------------------------------*/
 .offer-1{
@@ -193,6 +176,110 @@ body{
     border-radius: 1rem;
 }
 
+/*-------------------------------------SUBSCRIPTION----------------------------------------*/
+.subscription{
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+}
+
+.subs-left{
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.subs-rigth{
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.subs-text{
+    width: 100%;
+    color: var(--c2);
+    font-family: var(--f2);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.subs-email{
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    font-family: var(--f2);
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.subs-button{
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    font-family: var(--f2); 
+    font-size: 1.2rem;
+}
+
+.subs-logo{
+    width: 60%;
+    height: 60%;  
+}
+
+.subs-logo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*-------------------------------------FOOTER-----------------------------------------*/
+
+.footer{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 1rem;
+    background-color: var(--c1);
+}
+
+.footer-text{
+    font-size: 0.9rem;
+    color: white;
+    font-family: var(--f3)
+}
+
+/*--------------------------------------BANNER--------------------------------------*/
+.banner{
+    position: fixed;
+    bottom: 0;
+}
+.banner-cont{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*----------------------------------------HOVERS----------------------------------------*/
 .nav-text:hover{
     font-size: 1.6rem;
