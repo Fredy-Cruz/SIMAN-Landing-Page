@@ -23,18 +23,20 @@
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2, 510px);
     gap: 2rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .container{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     padding: 0.5rem;
     border-radius: 1rem;
     background: linear-gradient(white, white, white, rgba(255, 120, 120, 0.453));
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 40px 70px 50px 40px;
+    grid-template-rows: 300px 30px 70px 40px 30px;
     align-items: center;
 }
 
@@ -92,4 +94,12 @@
     color: var(--c5);
     padding: 5px;
     text-decoration: line-through;
+}
+
+/*----------------------------------------HOVERS----------------------------------------*/
+.container:hover{
+    width: 100%;
+    height: 100%;
+    border: var(--c1) 5px double;
+    transition: width 0.5s, height 0.5s, border 0.5s;
 }
