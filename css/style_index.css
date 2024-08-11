@@ -138,7 +138,7 @@ body{
 /*--------------------------------------PROMOTIONS-1--------------------------------------*/
 .promotion-1{
     width: 80%;
-    height: 100vh;
+    height: 900px;
     display: grid;
     grid-template-areas: 
         "a  a   a   a"
@@ -147,7 +147,7 @@ body{
         "b  d   e   e"
         "f  f   g   g"
     ;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
     padding: 1rem;
     border-radius:1rem;
@@ -278,7 +278,22 @@ body{
     object-fit: contain;
 }
 
+/*-------------------------------------FOOTER-----------------------------------------*/
 
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 1rem;
+    background-color: var(--c1);
+}
+
+.footer-text{
+    font-size: 0.9rem;
+    color: white;
+    font-family: var(--f3)
+}
 
 /*----------------------------------------HOVERS----------------------------------------*/
 .nav-text:hover{
