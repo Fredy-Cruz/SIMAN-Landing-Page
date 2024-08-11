@@ -21,7 +21,7 @@
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2, 510px);
+    grid-template-rows: repeat(3, 510px);
     gap: 2rem;
     justify-items: center;
     align-items: center;
