@@ -14,13 +14,8 @@
 
 /*--------------------------------------OFFER-1--------------------------------------*/
 .offer-1{
-    height: 100vh;
     display: grid;
-    grid-template-areas: 
-        "a  c"
-        "b  c"
-    ;
-    grid-template-columns: 1fr 0.6fr;
+    
     gap: 0.5rem;
     border-radius:1rem;
 }
@@ -57,7 +52,6 @@
 }
 .banner-cont{
     width: 100%;
-    height: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,4 +68,91 @@
     height: 100%;
     border: 0.5rem var(--c1) double;
     transition: width 1s, height 1s;
+}
+
+/*-----------------------------------MEDIA-QUERY-------------------------------------*/
+
+/*Small screens*/
+@media (min-width: 320px) and (max-width: 480px){
+   .offer-1{
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+
+    grid-template-rows: repeat(auto-fit);
+   }
+
+   .banner-cont{
+    height: 1.5rem;
+   }
+   
+}
+
+/*Smartphones*/
+@media (min-width: 481px) and (max-width: 768px){
+    .offer-1{
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+    
+        grid-template-rows: repeat(auto-fit);
+    }
+    
+    .banner-cont{
+        height: 2rem;
+    }
+}
+
+/*tablet ad landscape*/
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
+    .offer-1{
+        height: 100vh;
+
+        grid-template-areas: 
+            "a  c"
+            "b  c"
+        ;
+        grid-template-columns: 1fr 0.6fr;
+
+    }
+    
+    .banner-cont{
+        height: 3.5rem;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) and (max-width: 1280px){
+    .offer-1{
+        height: 100vh;
+
+        grid-template-areas: 
+            "a  c"
+            "b  c"
+        ;
+        grid-template-columns: 1fr 0.6fr;
+
+    }
+    .banner-cont{
+        height: 3.5rem;
+    }
+}
+
+/*Big Screens*/
+@media (min-width: 1281px){
+    .offer-1{
+        height: 100vh;
+
+        grid-template-areas: 
+            "a  c"
+            "b  c"
+        ;
+        grid-template-columns: 1fr 0.6fr;
+
+        .banner-cont{
+            height: 3.5rem;
+        }
+    }
 }
