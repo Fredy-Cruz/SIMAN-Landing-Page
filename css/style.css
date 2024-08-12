@@ -298,7 +298,7 @@ main{
     }
 }
 
-/*tablet ad landscape*/
+/*tablet and landscape*/
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
     .nav{
         grid-template-columns: 1fr;
