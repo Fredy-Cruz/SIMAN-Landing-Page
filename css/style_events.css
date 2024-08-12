@@ -16,7 +16,6 @@
 
 .events{
     width: 80%;
-    height: 100vh;
     margin-top: 2rem;
     margin-bottom: 2rem;
     
@@ -34,6 +33,7 @@
     display: grid;
     grid-template-columns: 0.07fr 1fr 0.5fr;
     grid-template-rows: 1fr;
+    background-size: cover;
 }
 
 .cont-date{
@@ -71,7 +71,6 @@
 .cont-text-title{
     font-family: var(--f1);
     font-size: 3.5rem;
-    text-shadow: 5px 5px black;
     font-style: italic;
     color: var(--c2);
 
@@ -101,6 +100,18 @@
 }
 
 .container-1{
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723433284/Tarea%20Semana%204/wtg4hqiyz8pqk0cr2gyw.jpg);
+}
+
+.container-2{
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723431705/Tarea%20Semana%204/dqk96jkks3y6hdrr7x32.jpg);
+}
+
+.container-3{
+    background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723432467/Tarea%20Semana%204/nebq5atcxnaicg1f7iz3.jpg);
+}
+
+.container-4{
     background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723430906/Tarea%20Semana%204/gsgl0swn4y7rjoxnegiz.jpg);
 }
 
@@ -108,7 +119,8 @@
 .container:hover{
     .cont-text-title{
         font-size: 4rem;
-        transition: font-size 1s;
+        text-shadow: 5px 5px black;
+        transition: font-size 1s, text-shadow 1s;
     }
 
     .cont-date-month{
