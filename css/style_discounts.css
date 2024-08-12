@@ -17,9 +17,6 @@
 /*-------------------------------------DISCOUNTS--------------------------------------*/
 .discounts{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3, 510px);
-    gap: 2rem;
     justify-items: center;
     align-items: center;
 }
@@ -82,7 +79,7 @@
     color: var(--c2);
     background-color: var(--c3);
     border-radius: 5px;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
 .cont-price{
@@ -99,4 +96,52 @@
     height: 100%;
     border: var(--c1) 5px double;
     transition: width 0.5s, height 0.5s, border 0.5s;
+}
+
+/*-----------------------------------MEDIA-QUERY-------------------------------------*/
+
+/*Small screens*/
+@media (min-width: 320px) and (max-width: 480px){
+    .discounts {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 510px);
+        gap: 1rem;
+    }
+}
+
+/*Smartphones*/
+@media (min-width: 481px) and (max-width: 768px){
+    .discounts {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 510px);
+        gap: 1rem;
+    }
+}
+
+/*tablet ad landscape*/
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
+    .discounts {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 510px);
+        gap: 1rem;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) and (max-width: 1280px){
+    .discounts {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 510px);
+        gap: 1rem;
+    }
+}
+
+/*Big Screens*/
+@media (min-width: 1281px){
+    .discounts {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 510px);
+        gap: 2rem;
+    }
+
 }
