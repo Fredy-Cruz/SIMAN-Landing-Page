@@ -14,18 +14,8 @@
 
 /*--------------------------------------PROMOTIONS-1--------------------------------------*/
 .promotion-1{
-    width: 80%;
     display: grid;
-    grid-template-areas: 
-        "a  a   a   a"
-        "b  c   c   c"
-        "b  d   e   e"
-        "b  d   e   e"
-        "f  f   g   g"
-    ;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
-    padding: 1rem;
     border-radius:1rem;
 }
 
@@ -51,6 +41,7 @@
 
 .prom1-item-a{
     grid-area: a;
+    display: flex;
     background-image: url(https://res.cloudinary.com/dhqkospsd/image/upload/v1723198242/Tarea%20Semana%204/hokhwhja5pnjjqhfbucv.gif);
     align-items: center;
     font-family: var(--f1);
@@ -63,6 +54,7 @@
 
 .subtext{
     font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .prom1-item-b{
@@ -101,4 +93,120 @@
     background-color: rgba(255, 255, 255, 0);
     transition: background-color 1s;
 }
+
+/*-----------------------------------MEDIA-QUERY-------------------------------------*/
+
+/*Small screens*/
+@media (min-width: 320px) and (max-width: 480px){
+    .promotion-1{
+        grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+    }
+
+    .prom1-item{
+        width: 100%;
+        height: 300px;
+    }
+    .prom1-text{
+        font-size: 2rem;
+
+    }
+
+    .prom1-item-a{
+        font-size: 2rem;
+    }
+}
+
+/*Smartphones*/
+@media (min-width: 481px) and (max-width: 768px){
+    .promotion-1{
+        grid-template-areas: 
+            "a  a"
+            "b  c"
+            "d  e"
+            "f  g"
+        ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4, 300px);
+    }
+
+    .prom1-item{
+        width: 100%;
+        height: 300px;
+    }
+    .prom1-text{
+        font-size: 2rem;
+
+    }
+
+    .prom1-item-a{
+        font-size: 2rem;
+    }
+}
+
+/*tablet ad landscape*/
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
+    .promotion-1{
+        grid-template-areas: 
+            "a  a   a"
+            "b  c   c"
+            "b  d   e"
+            "f  g   g"
+        ;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,200px);
+    }
+
+    .prom1-item{
+        width: 100%;
+    }
+    .prom1-text{
+        font-size: 2rem;
+
+    }
+
+    .prom1-item-a{
+        font-size: 2rem;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) and (max-width: 1280px){
+    .promotion-1{
+        height: 100vh;
+        grid-template-areas: 
+            "a  a   a   a"
+            "b  c   c   c"
+            "b  d   e   e"
+            "b  d   e   e"
+            "f  f   g   g"
+        ;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*Big Screens*/
+@media (min-width: 1281px){
+    .promotion-1{
+        height: 100vh;
+        grid-template-areas: 
+            "a  a   a   a"
+            "b  c   c   c"
+            "b  d   e   e"
+            "b  d   e   e"
+            "f  f   g   g"
+        ;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    }
+}
+
 

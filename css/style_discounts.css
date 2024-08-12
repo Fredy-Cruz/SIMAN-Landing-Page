@@ -16,9 +16,6 @@
 
 /*-------------------------------------DISCOUNTS--------------------------------------*/
 .discounts{
-    width: 80%;
-    margin: 1rem;
-
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3, 510px);

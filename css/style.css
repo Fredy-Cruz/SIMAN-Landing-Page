@@ -98,6 +98,12 @@ body{
     object-fit: cover;
 }
 
+/*----------------------------------------MAIN----------------------------------------*/
+main{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 /*----------------------------------------NAVBAR----------------------------------------*/
 .nav{
     width: 100%;
@@ -267,6 +273,10 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 280px 200px;
     }
+
+    main{
+        width: 97%;
+    }
 }
 
 /*Smartphones*/
@@ -282,6 +292,9 @@ body{
         height: 420px;
         grid-template-columns: 1fr;
         grid-template-rows: 240px 190px;
+    }
+    main{
+        width: 95%;
     }
 }
 
@@ -300,6 +313,9 @@ body{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
     }
+    main{
+        width: 90%;
+    }
 }
 
 /*Desktop*/
@@ -315,6 +331,9 @@ body{
         height: 35vh;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+    }
+    main{
+        width: 80%;
     }
 }
 
@@ -332,5 +351,7 @@ body{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
     }
-    
+    main{
+        width: 80%;
+    }
 }
